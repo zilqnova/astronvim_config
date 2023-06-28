@@ -1,18 +1,4 @@
 return {
-  -- User defined plugin options
-  plugins = {
-    {
-      "goolord/alpha-nvim",
-      opts = function(_, opts) -- override options using lazy.nvim
-        opts.section.header.val = {
-          "Welcome to AstroNvim",
-          " ",
-          "     Elizabeth",
-        }
-      end,
-    },
-  },
-
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -95,5 +81,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-  end, 
+  end,
 }
